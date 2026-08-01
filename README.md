@@ -3,11 +3,15 @@ This circuit is an extension of the classic YASH sample and hold circuit by Ren�
 
 This redux adds (1) a white noise circuit (by Ray Wilson), (2) scaling of the YASH output to work with CV in (for example, for the Koma Elektronik Field Kit), and (3) a test oscillator for testing/tuning the rest of the circuit. 
 
-# YASH Remix — Bill of Materials
+## YASH Remix — Bill of Materials
 
 Based on `yash_redux.kicad_sch`.
 
-## ICs
+## Schematic
+
+![description](yash_redux.png)
+
+### ICs
 
 | Ref | Part | Notes |
 |---|---|---|
@@ -16,7 +20,7 @@ Based on `yash_redux.kicad_sch`.
 | U3 (+U3A) | 4093 | Trigger osc, sample-rate osc, hold-logic buffer |
 | U4 | 4093 | Test oscillator |
 
-## Transistors / Diodes
+### Transistors / Diodes
 
 | Ref | Part | Notes |
 |---|---|---|
@@ -24,7 +28,7 @@ Based on `yash_redux.kicad_sch`.
 | D1 | 1N4148 | |
 | D2 | LED | |
 
-## Resistors
+### Resistors
 
 | Value | Qty | Refs |
 |---|---|---|
@@ -42,7 +46,7 @@ Based on `yash_redux.kicad_sch`.
 
 Note: R16 in the schematic is drawn as 1 resistor (7.9k). This is actually two resistors:  R16a 5.7k + R16b 2.2k = 7.9k combined.
 
-## Capacitors
+### Capacitors
 
 | Value | Qty | Refs |
 |---|---|---|
@@ -51,7 +55,7 @@ Note: R16 in the schematic is drawn as 1 resistor (7.9k). This is actually two r
 | 0.1µF | 4 | C1, C6, C7, C8 |
 | 470nF | 3 | C2, C4, C5 |
 
-## Potentiometers
+### Potentiometers
 
 | Value | Qty | Refs |
 |---|---|---|
